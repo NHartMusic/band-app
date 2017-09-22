@@ -1,0 +1,3 @@
+Todos:
+1) Styling
+2) Deploy to heroku
