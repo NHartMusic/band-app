@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
+// import {BrowserRouter as Router,Route} from 'react-router-dom';
+import Login from "./components/Login/Login";
 import './App.css';
 
 class App extends Component {
@@ -14,7 +15,10 @@ class App extends Component {
 
   render() {
     return (
-      <h1>Welcome to the band app</h1>
+      <div>
+        <h1>Welcome to the band app</h1>
+        <Login/>
+      </div>
     );
   }
 }
