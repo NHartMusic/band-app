@@ -1,7 +1,10 @@
-1. Create HTML Layout
-2. Model
-3. Routes
-4. Constructor Functions
-5. Events (button and input)
-6. API calls
-7. Styling
+1. Create HTML Layout in React Components
+2. Model for Individual Bands
+3. Adding Seed Data (for bands and genres)
+4. Routes (back-end)
+5. React Router (front-end)
+6. Constructor Functions (back-end)
+7. Events (button and input)
+8. API calls (front-end)
+9. Styling (front-end)
+10. Chat Functionality 
