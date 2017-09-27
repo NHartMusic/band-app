@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import Login from "./components/Login/Login";
+import Login from "../../components/Login/Login";
 
-class Login extends Component{
+class Landing extends Component{
   constructor(){
     super();
     this.state = {
 
     }
-    this.logUserIn = this.logUserIn.bind(this);
-    this.logUserOut = this.logUserOut.bind(this);
   }
-
-
-
   render(){
     return(
       <div>
-        
+        <h1>Welcome to the band app</h1>
+        <h3>Are you a band or a fan?</h3>
+        <Login/>
       </div>
     )
   }
 }
 
-export default Login;
+export default Landing;
