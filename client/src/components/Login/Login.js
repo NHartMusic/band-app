@@ -5,7 +5,7 @@ class Login extends Component{
   constructor(){
     super();
     this.state = {
-
+      hello:"yo peeps"
     }
     this.logUserIn = this.logUserIn.bind(this);
     this.logUserOut = this.logUserOut.bind(this);
