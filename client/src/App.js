@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import Landing from "./pages/LandingPage/LandingPage";
 import BandSignUp from "./pages/BandSignUp/BandSignUp";
@@ -6,6 +7,10 @@ import BandProfile from "./pages/BandProfile/BandProfile";
 import BandGigs from "./pages/BandGigs/BandGigs";
 import FanMusicSearch from "./pages/FanMusicSearch/FanMusicSearch";
 import FanMusicResults from "./pages/FanMusicResults/FanMusicResults";
+=======
+// import {BrowserRouter as Router,Route} from 'react-router-dom';
+
+>>>>>>> pull test
 import './App.css';
 
 class App extends Component {
