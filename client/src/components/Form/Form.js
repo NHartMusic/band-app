@@ -13,7 +13,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
+      <div className = "container">
         <input
           name="name"
           type="text"
