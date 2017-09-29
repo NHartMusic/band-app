@@ -169,14 +169,15 @@ const BandSeed = [
 
   }
 ];
+
 Bands
   .remove({})
   .then(() => Bands.collection.insertMany(BandSeed))
   .then(data => {
     console.log(data.insertedIds.length + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
-    process.exit(1);
+    // process.exit(1);
   });
