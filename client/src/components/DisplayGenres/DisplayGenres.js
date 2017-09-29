@@ -1,22 +1,38 @@
 import React, { Component } from 'react';
+import API from '../../utils/API';
 import './DisplayGenres.css';
 
 class DisplayGenres extends Component{
   constructor(){
     super();
     this.state = {
-
+      bands:[]
     }
+  }
+  componentDidMount(){
+    API.getBands()
+        .then(res =>
+          this.setState({
+            bands:res.data
+          })
+        )
+        .catch(err => console.log(err));
   }
   render(){
     return(
       <div className="row">
-        {/*map through our genre list*/}
-        <img
-          id="genrePictures"
-          src="http://2.bp.blogspot.com/-20pP-Rei6-c/UFbKhBrFkWI/AAAAAAAAAGQ/FaBC26dcdjs/s1600/custom-genre-art.png"
-          alt="genres go here"
-        />
+        {this.state.bands.map(x => {
+          return(
+            <div className="oneBand">
+              <h3>{x.name}</h3>
+              <p>Genre: <em>{x.genre}</em></p>
+              <img
+              className="bandImg"
+              src={x.photoURL}
+              alt="band gathering together"/>
+            </div>
+          )
+        })}
       </div>
     )
   }

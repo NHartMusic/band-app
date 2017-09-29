@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
 import MusicSearchBar from "../../components/MusicSearchBar/MusicSearchBar";
 import DisplayGenres from "../../components/DisplayGenres/DisplayGenres";
+// import API from '../../utils/API';
 import './FanMusicSearch.css';
 
 class FanMusicSearch extends Component{
   constructor(){
     super();
     this.state = {
-
+      // bands:[]
     }
   }
+  // componentDidMount(){
+  //   API.getBands()
+  //       .then(res =>
+  //         this.setState({
+  //           bands:res.data
+  //         })
+  //       )
+  //       .catch(err => console.log(err));
+  // }
+
   render(){
     return(
       <div className="musicSearch">
@@ -18,6 +29,7 @@ class FanMusicSearch extends Component{
         <MusicSearchBar/>
         <DisplayGenres/>
       </div>
+
     )
   }
 }
