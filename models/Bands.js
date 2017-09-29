@@ -27,15 +27,15 @@ const BandSchema = new Schema({
   },
   soundcloudURL: {
     type: String,
-    required: true
+    required: false
   },
   facebookURL: {
     type: String,
-    required: true
+    required: false
   },
   youtubeURL: {
     type: String,
-    required: true
+    required: false
   },
   newMemberSearch:{
     type:Boolean,

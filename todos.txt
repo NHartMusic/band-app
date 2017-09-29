@@ -1,5 +1,5 @@
 1. Create HTML Layout in React Components
-2. Model for Individual Bands
+2. Model for Individual Bands - done
 3. Adding Seed Data (for bands and genres)
 4. Routes (back-end)
 5. React Router (front-end)
@@ -7,4 +7,4 @@
 7. Events (button and input)
 8. API calls (front-end)
 9. Styling (front-end)
-10. Chat Functionality 
+10. Chat Functionality
