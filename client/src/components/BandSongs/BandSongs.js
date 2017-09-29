@@ -10,7 +10,7 @@ class BandSongs extends Component{
   render(){
     return(
       <div className="row">
-        <iframe
+        {/*<iframe
           src="https://open.spotify.com/embed/album/1CljfJDGGAuJdSNhrcRwFC"
           width="300"
           height="300"
@@ -18,7 +18,7 @@ class BandSongs extends Component{
           allowtransparency="true"
           marginheight="15"
         >
-        </iframe>
+        </iframe>*/}
       </div>
     )
   }
