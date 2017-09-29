@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const Bands = require("../models/Bands.js");
-mongoose.Promise = global.Promise;
-// This file empties the Books collection and inserts the books below
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/bandapp",
-  {
-    useMongoClient: true
-  }
-);
+// mongoose.Promise = global.Promise;
+// // This file empties the Books collection and inserts the books below
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/bandapp",
+//   {
+//     useMongoClient: true
+//   }
+// );
 const BandSeed = [
   {
     name: "The Velvet Touch",
