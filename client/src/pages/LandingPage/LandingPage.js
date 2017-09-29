@@ -8,12 +8,23 @@ class Landing extends Component{
 
     }
   }
+
+  goSearchForMusic = (e) => {
+    e.preventDefault();
+    window.location.pathname = "/music-options";
+  }
+
   render(){
     return(
       <div>
         <h1>Welcome to the band app</h1>
         <h3>Are you a band or a fan?</h3>
-        <Login/>
+        <div className="row">
+        <div className="col-md-6">
+          <button onClick={this.goSearchForMusic}>Continue as a Fan</button>
+        </div>
+          <Login/>
+        </div>
       </div>
     )
   }
