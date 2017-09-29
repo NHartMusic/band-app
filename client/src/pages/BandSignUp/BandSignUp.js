@@ -10,7 +10,7 @@ class BandSignUp extends Component{
   }
   render(){
     return(
-      <div>
+      <div className = "row">
         <h2>Welcome user{/*gmail name will go here*/}</h2>
         <h4>Tell us more about yourself</h4>
         <Form/>
