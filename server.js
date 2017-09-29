@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const routes = require("./routes/routes");
 const app = express();
 const mongoose = require("mongoose");
+const seeds = require("./scripts/bandSeeds.js");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -22,7 +23,7 @@ app.use(bodyParser.json());
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
-Connect to the Mongo DB
+// Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/bandapp",
   {
