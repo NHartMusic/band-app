@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const BandSchema = new Schema({
     name: {
         type: String,
-        required: true
+        required: true,
         validate: {
             validator: function(v, cb) {
                 User.find({

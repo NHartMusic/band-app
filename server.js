@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const bodyParser = require('body-parser');
-const routes = require("./routes/routes");
+const routes = require("./routes/bandRoutes");
 const app = express();
 const mongoose = require("mongoose");
 const seeds = require("./scripts/bandSeeds.js");
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Add routes, both API and view
-// app.use("/",routes);
+app.use("/",routes);
 
 // app.use(express.static("client/build"));
 
