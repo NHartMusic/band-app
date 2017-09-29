@@ -21,14 +21,14 @@ app.use(bodyParser.json());
 // app.use(express.static("client/build"));
 
 // Set up promises with mongoose
-// mongoose.Promise = global.Promise;
-// Connect to the Mongo DB
-// mongoose.connect(
-//   process.env.MONGODB_URI || "mongodb://localhost/bandapp",
-//   {
-//     useMongoClient: true
-//   }
-// );
+mongoose.Promise = global.Promise;
+Connect to the Mongo DB
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/bandapp",
+  {
+    useMongoClient: true
+  }
+);
 
 // Send every request to the React app
 // Define any API routes before this runs
