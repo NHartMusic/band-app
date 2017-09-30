@@ -11,7 +11,7 @@ const Bands = require("../models/Bands.js");
 const BandSeed = [
   {
     name: "The Velvet Touch",
-    photoURL: "http://bit.ly/2hAzFev",
+    photoURL: "http://bit.ly/2hCoGRz",
     genre: "soul",
     location: "berkely",
     bio: "best christian metal band ever",
@@ -21,7 +21,7 @@ const BandSeed = [
   },
   {
     name: "Penumbral Rise",
-    photoURL: "http://bit.ly/2hAzFev",
+    photoURL: "http://bit.ly/2x5bStV",
     genre: "psych",
     location: "sf",
     bio: "best christian metal band ever",
@@ -31,7 +31,7 @@ const BandSeed = [
   },
   {
     name: "Thee Oh Sees",
-    photoURL: "http://bit.ly/2hAzFev",
+    photoURL: "http://bit.ly/2xSz0Lg",
     genre:"garage",
     location:"sf",
     bio: "best christian metal band ever",
@@ -41,7 +41,7 @@ const BandSeed = [
   },
   {
     name: "The Seshen",
-    photoURL: "http://bit.ly/2hAzFev",
+    photoURL: "http://bit.ly/2xGgZjS",
     genre: "soul",
     location: "oakland",
     bio: "best christian metal band ever",
@@ -49,125 +49,115 @@ const BandSeed = [
     gigs:["Great American Music Hall, 9/28/2017"]
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Kid Trails",
+    photoURL: "http://bit.ly/2xJQdVi",
+    genre:"pop",
+    location:"oakland",
+    bio: "best christian metal band ever",
+    newMemberSearch:true,
+    gigs:["The Chapel, 4/19/2017"]
+
+  },
+  {
+    name: "WonderWench",
+    photoURL: "http://bit.ly/2hClqpw",
+    genre:"folk",
+    location:"berkely",
     bio: "best christian metal band ever",
     newMemberSearch:true,
     gigs:["Great American Music Hall, 9/28/2017"]
 
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Vetiver",
+    photoURL: "http://bit.ly/2xOdZkG",
+    genre:"folk",
+    location:"richmond",
     bio: "best christian metal band ever",
     newMemberSearch:true,
     gigs:["Great American Music Hall, 9/28/2017"]
 
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Black Mountain",
+    photoURL: "http://bit.ly/2wpWTGx",
+    genre:"psych",
+    location:"sf",
+    bio: "best christian metal band ever",
+    newMemberSearch:true,
+    gigs:["The Chapel, 3/16/17"]
+
+  },
+  {
+    name: "Dungen",
+    photoURL: "http://bit.ly/2fzPduB",
+    genre:"psych",
+    location:"sf",
     bio: "best christian metal band ever",
     newMemberSearch:true,
     gigs:["Great American Music Hall, 9/28/2017"]
 
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Todd Rundgren",
+    photoURL: "http://bit.ly/2xKIqGK",
+    genre:"rock",
+    location:"sf",
+    bio: "best christian metal band ever",
+    newMemberSearch:true,
+    gigs:["Chapel, 8/30/17"]
+
+  },
+  {
+    name: "tUnE-yArDs",
+    photoURL: "http://bit.ly/2kff9RF",
+    genre:"soul",
+    location:"oakland",
     bio: "best christian metal band ever",
     newMemberSearch:true,
     gigs:["Great American Music Hall, 9/28/2017"]
 
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Snarky Puppy",
+    photoURL: "http://bit.ly/2ygbhFZ",
+    genre:"funk",
+    location:"sf",
     bio: "best christian metal band ever",
     newMemberSearch:true,
-    gigs:["Great American Music Hall, 9/28/2017"]
+    gigs:["SF Jazz Gala, 9/28/2017"]
 
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Talib Kweli",
+    photoURL: "http://bit.ly/2fAGDfi",
+    genre:"hip hop",
+    location:"berkely",
     bio: "best christian metal band ever",
     newMemberSearch:true,
-    gigs:["Great American Music Hall, 9/28/2017"]
+    gigs:["UC Theatre, 1/21/17"]
 
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Nicolas Jaar",
+    photoURL: "http://bit.ly/2yfk23k",
+    genre:"electronic",
+    location:"berkely",
     bio: "best christian metal band ever",
     newMemberSearch:true,
-    gigs:["Great American Music Hall, 9/28/2017"]
+    gigs:["UC Theatre, 10/28/16"]
 
   },
   {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
+    name: "Charles Bradley",
+    photoURL: "http://bit.ly/2yAmjSv",
+    genre:"soul",
+    location:"sf",
     bio: "best christian metal band ever",
     newMemberSearch:true,
     gigs:["Great American Music Hall, 9/28/2017"]
 
-  },
-  {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
-    bio: "best christian metal band ever",
-    newMemberSearch:true,
-    gigs:["Great American Music Hall, 9/28/2017"]
-
-  },
-  {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
-    bio: "best christian metal band ever",
-    newMemberSearch:true,
-    gigs:["Great American Music Hall, 9/28/2017"]
-
-  },
-  {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
-    bio: "best christian metal band ever",
-    newMemberSearch:true,
-    gigs:["Great American Music Hall, 9/28/2017"]
-
-  },
-  {
-    name: "",
-    photoURL: "http://bit.ly/2hAzFev",
-    genre:"",
-    location:"",
-    bio: "best christian metal band ever",
-    newMemberSearch:true,
-    gigs:["Great American Music Hall, 9/28/2017"]
-
-  }
+  } 
 ];
 
 Bands
