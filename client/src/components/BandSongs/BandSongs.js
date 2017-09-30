@@ -10,6 +10,7 @@ class BandSongs extends Component{
   render(){
     return(
       <div className="row">
+        <div className="col-md-8">
         {/*<iframe
           src="https://open.spotify.com/embed/album/1CljfJDGGAuJdSNhrcRwFC"
           width="300"
@@ -19,6 +20,7 @@ class BandSongs extends Component{
           marginheight="15"
         >
         </iframe>*/}
+        </div>
       </div>
     )
   }
