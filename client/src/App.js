@@ -28,7 +28,7 @@ class App extends Component {
           <Route path = "/profile" component={BandProfile}/>
           <Route path = "/gigs" component={BandGigs}/>
           <Route path = "/music-options" component={FanMusicSearch}/>
-          <Route path = "/searched-bands" component={FanMusicResults}/>
+          {/*<Route path = "/searched-bands" component={FanMusicResults}/>*/}
         </div>
       </Router>
     );
