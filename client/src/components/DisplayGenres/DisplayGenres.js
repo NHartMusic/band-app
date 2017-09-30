@@ -3,25 +3,17 @@ import API from '../../utils/API';
 import './DisplayGenres.css';
 
 class DisplayGenres extends Component{
-  constructor(){
-    super();
-    this.state = {
-      bands:[]
-    }
+  constructor(props){
+    super(props);
+    // this.state = {
+    //
+    // }
   }
-  componentDidMount(){
-    API.getBands()
-        .then(res =>
-          this.setState({
-            bands:res.data
-          })
-        )
-        .catch(err => console.log(err));
-  }
+
   render(){
     return(
       <div className="row">
-        {this.state.bands.map(x => {
+        {this.props.bandData.map(x => {
           return(
             <div className="oneBand">
               <h3>{x.name}</h3>
