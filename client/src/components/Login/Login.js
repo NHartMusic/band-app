@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { signIn, authStateChange } from "../../helpers/auth";
+import { signIn} from "../../helpers/auth";
 
 class Login extends Component{
   constructor(){
@@ -27,13 +27,12 @@ class Login extends Component{
         window.location.pathname = "/profile";
 
       }).catch(function(error) {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorMessage);
+            console.log(error.code);
+            console.log(error.message);
             // The email of the user's account used.
-            const email = error.email;
+            console.log(error.email);
             // The firebase.auth.AuthCredential type that was used.
-            const credential = error.credential;
+            console.log(error.credential)
             // ...
           });;
   }

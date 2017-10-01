@@ -4,44 +4,58 @@ class SearchBar extends Component{
   constructor(props){
     super(props);
     this.state = {
-
+      filteredBands: this.props.bandStuff,
+      searchGenre : ""
     }
   }
 
-  filterBandsByGenre = (genre) =>{
+  filterBandsByGenre(genre){
     var result = [];
-    console.log(this.props);
-    for(let i = 0; i < this.props.bandData; i++ ){
-      console.log(this.props.bandData[i]);
-      console.log("hello");
-      // if(this.props.bandData[i].genre === genre){
-      //   console.log(this.props.bandData[i]);
-      //   // result.push(this.props.bandData[i]);
-      // }
+    for(let i = 0; i < this.props.bandStuff.length; i++ ){
+      if(this.props.bandStuff[i].genre === genre){
+        result.push(this.props.bandStuff[i]);
+      }
     }
-    // console.log(result);
+    this.props.callBackFromParent(result);
   }
 
-  componentDidMount(){
-    this.filterBandsByGenre("soul");
+  handleChange = (e) => {
+    // console.log(e.target.value);
+    this.setState({
+      searchGenre: e.target.value
+    })
+
+    this.filterBandsByGenre(this.state.searchGenre);
+  }
+
+  handleFilter = (e) => {
+    this.filterBandsByGenre(this.state.searchGenre)
   }
 
   render(){
     return(
       <div className="row">
-      {this.props.bandStuff.map(x =>
-        <p>{x.name}</p>)}
-        <input
-          name="genreSearch"
-          type="text"
-          placeholder="Filter by Genre"
-        />
-        <input
-          name="FilterSearch"
-          type="text"
-          placeholder="Filter by Band"
-        />
-        {/*<button>Search</button>*/}
+        <ul>
+        {/*this.state.filteredBands.map(x =><li>{x.name}</li>)*/}
+        </ul>
+        <div className = "row">
+          <input
+            value = {this.state.searchGenre}
+            onChange = {this.handleChange}
+            name="genreSearch"
+            type="text"
+            placeholder="Filter by Genre"
+          />
+        </div>
+
+        {/*<div className = "row">
+          <button onClick={this.handleFilter}>Filter</button>
+            <input
+              name="genreSearch"
+              type="text"
+              placeholder="Filter by Band"
+            />
+        </div>*/}
       </div>
     )
   }

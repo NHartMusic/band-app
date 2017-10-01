@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {signOut, authStateChange } from "../../helpers/auth";
+import {signOut} from "../../helpers/auth";
 
 class Navbar extends Component{
   constructor(){

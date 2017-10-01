@@ -16,7 +16,7 @@ class SearchedBand extends Component{
           <img
             id="dogBand"
             src="http://funnyfilez.funnypart.com/pictures/FunnyPart-com-new_band.jpg"
-            alt="band picture"
+            alt="band together"
           />
           <p>Bark Street Boys</p>
         </div>

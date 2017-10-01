@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import API from '../../utils/API';
+// import API from '../../utils/API';
 import './DisplayGenres.css';
 
 class DisplayGenres extends Component{
   constructor(props){
     super(props);
-    // this.state = {
-    //
-    // }
+    this.state = {
+
+    }
   }
 
   render(){
@@ -15,7 +15,7 @@ class DisplayGenres extends Component{
       <div className="row">
         {this.props.bandData.map(x => {
           return(
-            <div className="oneBand">
+            <div className="oneBand" key={x._id}>
               <h3>{x.name}</h3>
               <p>Genre: <em>{x.genre}</em></p>
               <img

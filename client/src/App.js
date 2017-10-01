@@ -5,7 +5,7 @@ import BandSignUp from "./pages/BandSignUp/BandSignUp";
 import BandProfile from "./pages/BandProfile/BandProfile";
 import BandGigs from "./pages/BandGigs/BandGigs";
 import FanMusicSearch from "./pages/FanMusicSearch/FanMusicSearch";
-import FanMusicResults from "./pages/FanMusicResults/FanMusicResults";
+// import FanMusicResults from "./pages/FanMusicResults/FanMusicResults";
 
 import './App.css';
 

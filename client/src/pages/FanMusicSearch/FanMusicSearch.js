@@ -8,7 +8,23 @@ class FanMusicSearch extends Component{
   constructor(){
     super();
     this.state = {
-      bands : []
+      allBands : [],
+      filteredBands: []
+    }
+  }
+
+  getDataFromChild = (dataFromChild) =>{
+    //we will use data from child here
+    if(!dataFromChild.length){
+      console.log("artist's dont exist");
+      this.setState({
+        filteredBands: this.state.allBands
+      })
+    }else{
+      console.log("artists exist!");
+      this.setState({
+        filteredBands: dataFromChild
+      })
     }
   }
 
@@ -16,7 +32,8 @@ class FanMusicSearch extends Component{
     API.getBands()
         .then(res =>
           this.setState({
-            bands:res.data
+            allBands:res.data,
+            filteredBands: res.data
           })
         )
         .catch(err => console.log(err));
@@ -28,9 +45,10 @@ class FanMusicSearch extends Component{
         <h2>Well hello there?</h2>
         <h4>What kind of music are you looking for?</h4>
         <MusicSearchBar
-        bandStuff = {this.state.bands}/>
+        bandStuff = {this.state.filteredBands}
+        callBackFromParent = {this.getDataFromChild}/>
         <DisplayGenres
-         bandData = {this.state.bands}/>
+        bandData = {this.state.filteredBands}/>
       </div>
 
     )
