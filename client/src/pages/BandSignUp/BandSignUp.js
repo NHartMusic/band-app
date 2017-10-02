@@ -11,9 +11,11 @@ class BandSignUp extends Component{
   render(){
     return(
       <div className = "row">
-        <h2>Welcome user{/*gmail name will go here*/}</h2>
-        <h4>Tell us more about yourself</h4>
-        <Form/>
+        <div class="col-lg-8" id="heading">
+          <h2>Welcome user{/*gmail name will go here*/}</h2>
+          <h4>Tell us more about yourself</h4>
+          <Form/>
+        </div>
       </div>
     )
   }

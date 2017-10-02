@@ -40,6 +40,16 @@ const BandSeed = [
 
   },
   {
+    name: "Babewatch",
+    photoURL: "http://bit.ly/2wrnzqx",
+    genre:"garage",
+    location:"oakland",
+    bio: "best christian metal band ever",
+    newMemberSearch: true,
+    gigs:["Great American Music Hall, 9/28/2017"]
+
+  },
+  {
     name: "The Seshen",
     photoURL: "http://bit.ly/2xGgZjS",
     genre: "soul",
