@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const routes = require("./routes/bandRoutes");
 const app = express();
 const mongoose = require("mongoose");
-const seeds = require("./scripts/bandSeeds.js");
+// const seeds = require("./scripts/bandSeeds.js");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
