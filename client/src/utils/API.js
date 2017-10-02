@@ -7,5 +7,9 @@ export default {
   },
   postBandData: function(){
     return axios.post("/addBand");
+  },
+  getOneBand: function(band_id){
+    // console.log("this is the bands real id: ", band_id);
+    return axios.get("/profile/" + band_id);
   }
 };
