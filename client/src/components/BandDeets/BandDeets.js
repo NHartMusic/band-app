@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
+import "./BandDeets.css";
 
 class BandDeets extends Component{
-  constructor(){
-    super();
-    this.state = {
-
-    }
+  constructor(props){
+    super(props);
   }
+
+  componentDidUpdate(){
+  }
+
   render(){
     return(
       <div className="row">
         <div className="col-md-6">
           <img
-          src="http://funnyfilez.funnypart.com/pictures/FunnyPart-com-new_band.jpg"
-          alt="dogs singing"/>
+          src={this.props.bandsData.photoURL}
+          alt="dogs singing"
+          className="bandProfilePicture"/>
         </div>
         <div className="col-md-6">
-          <h2>Bark Street Boys</h2>
-          <h4>Bark street boys sings about chasing cats and peeing on fire hydrants</h4>
+          <h2>{this.props.bandsData.name}</h2>
+          <h4>{this.props.bandsData.bio}</h4>
           <p>*Social Media icons go here*</p>
         </div>
       </div>

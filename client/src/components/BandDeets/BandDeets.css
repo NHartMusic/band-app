@@ -1,4 +1,4 @@
-.col-md-6 {
+/*.col-md-6 {
   width: 60%;
   margin-left: 20%;
   margin-top: none;
@@ -9,11 +9,16 @@
   align-content: center;
   margin-bottom: 20px;
   box-shadow: 10px 10px 5px #888888;
-}
+}*/
 
 .bandPic{
   height: 100%;
   width: 100%;
+}
+
+.bandProfilePicture{
+  width:250px;
+  height:250px;
 }
 
 .carousel{

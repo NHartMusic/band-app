@@ -5,23 +5,30 @@ import BandSongs from "../../components/BandSongs/BandSongs";
 import API from '../../utils/API';
 
 class BandProfile extends Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
-      bandId: ""
+      oneBandsData: ""
     }
   }
+
   componentDidMount(){
     //need to retrieve bands id and append below
-    API.getOneBand("59d1997074694e1300e0cee2")
-        .then(res => console.log(res.data))
+    API.getOneBand("59d1997074694e1300e0cee0")
+        .then(res =>
+        this.setState({
+          oneBandsData: res.data
+        }))
       .catch(err => console.log(err));
   }
+
   render(){
     return(
       <div>
         <Navbar/>
-        <BandDeets/>
+        <BandDeets
+          bandsData = {this.state.oneBandsData}
+        />
         <BandSongs/>
       </div>
     )
