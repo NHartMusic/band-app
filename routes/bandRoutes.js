@@ -7,3 +7,4 @@ const bandController = require("../controllers/bandController.js");
 module.exports = router
   .get("/allBands",bandController.findAll)
   .get("/profile/:id", bandController.findByName)
+  .get("/gigs/:id", bandController.findByName)

@@ -25,7 +25,7 @@ class Navbar extends Component{
     return(
       <div>
         <a href="/profile">Home</a>
-        <a href="/gigs">Gigs</a>
+        <a href={"/gigs/" + this.props.bandId}>Gigs</a>
         <a href="/">Chat</a>
         <a onClick={this.logUserOut} href="/">Logout</a>
       </div>

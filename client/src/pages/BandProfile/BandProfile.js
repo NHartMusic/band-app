@@ -27,7 +27,8 @@ class BandProfile extends Component{
   render(){
     return(
       <div>
-        <Navbar/>
+        <Navbar
+          bandId = {this.state.oneBandsData._id}/>
         <BandDeets
           bandsData = {this.state.oneBandsData}
         />
