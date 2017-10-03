@@ -25,7 +25,7 @@ class App extends Component {
         <div className="container">
           <Route exact path = "/" component={Landing}/>
           <Route path = "/signup" component={BandSignUp}/>
-          <Route path = "/profile" component={BandProfile}/>
+          <Route path = "/profile/:id" component={BandProfile}/>
           <Route path = "/gigs" component={BandGigs}/>
           <Route path = "/music-options" component={FanMusicSearch}/>
           {/*<Route path = "/searched-bands" component={FanMusicResults}/>*/}

@@ -13,8 +13,10 @@ class BandProfile extends Component{
   }
 
   componentDidMount(){
+    console.log(this.props.match.params.id);
+    let chosenId = this.props.match.params.id;
     //need to retrieve bands id and append below
-    API.getOneBand("59d1997074694e1300e0cee0")
+    API.getOneBand(chosenId)
         .then(res =>
         this.setState({
           oneBandsData: res.data

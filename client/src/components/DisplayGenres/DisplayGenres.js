@@ -10,6 +10,11 @@ class DisplayGenres extends Component{
     }
   }
 
+  handleClick = (event) => {
+    console.log(event.target.id);
+    window.location.pathname = `/profile/${event.target.id}`;
+  }
+
   render(){
     return(
       <div className="row">
@@ -22,7 +27,11 @@ class DisplayGenres extends Component{
               className="bandImg"
               src={x.photoURL}
               alt="band gathering together"/>
+              <button id={x._id}
+                onClick={this.handleClick}
+              >Go to bands profile</button>
             </div>
+
           )
         })}
       </div>
