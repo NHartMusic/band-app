@@ -1,0 +1,2 @@
+1) load the bands profile with params/:id - not working
+2) Pass Data between BandProfile and FanMusicSearch
