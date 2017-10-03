@@ -30,6 +30,16 @@ const BandSeed = [
 
   },
   {
+    name: "Deerhunter",
+    photoURL: "http://bit.ly/2xTK2Q2",
+    genre:"psych",
+    location:"sf",
+    bio: "best christian metal band ever",
+    newMemberSearch: true,
+    gigs:["The Midway SF, 10/1/2017"]
+
+  },
+  {
     name: "Thee Oh Sees",
     photoURL: "http://bit.ly/2xSz0Lg",
     genre:"garage",
@@ -49,6 +59,16 @@ const BandSeed = [
     gigs:["Great American Music Hall, 9/28/2017"]
 
   },
+  {
+    name: "Battles",
+    photoURL: "http://bit.ly/2xatBQL",
+    genre:"psych",
+    location:"sf",
+    bio: "best christian metal band ever",
+    newMemberSearch: true,
+    gigs:["The Midway SF, 10/1/2017"]
+
+  }
   {
     name: "The Seshen",
     photoURL: "http://bit.ly/2xGgZjS",
