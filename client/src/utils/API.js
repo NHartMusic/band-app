@@ -15,5 +15,8 @@ export default {
   getOneBandsGigs: function(band_id){
     // console.log("this is the bands real id: ", band_id);
     return axios.get("/gigs/" + band_id);
+  },
+  saveBand: function(bandData) {
+    return axios.post("createBand", bandData);
   }
 };
