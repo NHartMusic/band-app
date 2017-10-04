@@ -42,7 +42,9 @@ class FanMusicSearch extends Component{
   render(){
     return(
       <div className="musicSearch">
+
         <h2>Well hello there!</h2>
+
         <h4>What kind of music are you looking for?</h4>
         <MusicSearchBar
         bandStuff = {this.state.filteredBands}

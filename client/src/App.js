@@ -5,7 +5,7 @@ import BandSignUp from "./pages/BandSignUp/BandSignUp";
 import BandProfile from "./pages/BandProfile/BandProfile";
 import BandGigs from "./pages/BandGigs/BandGigs";
 import FanMusicSearch from "./pages/FanMusicSearch/FanMusicSearch";
-// import FanMusicResults from "./pages/FanMusicResults/FanMusicResults";
+import Admin from "./pages/Admin/Admin";
 
 import './App.css';
 
@@ -28,6 +28,7 @@ class App extends Component {
           <Route path = "/profile/:id" component={BandProfile}/>
           <Route path = "/gigs/:id" component={BandGigs}/>
           <Route path = "/music-options" component={FanMusicSearch}/>
+          <Route path = "/admin" component={Admin}/>
           {/*<Route path = "/searched-bands" component={FanMusicResults}/>*/}
         </div>
       </Router>

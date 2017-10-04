@@ -1,10 +1,9 @@
-1. Create HTML Layout in React Components
-2. Model for Individual Bands - done
-3. Adding Seed Data (for bands and genres)
-4. Routes (back-end)
-5. React Router (front-end)
-6. Constructor Functions (back-end)
-7. Events (button and input)
-8. API calls (front-end)
-9. Styling (front-end)
-10. Chat Functionality
+
+1) Sign-up page - 10/3
+2) Band Profile Songs
+3) re-do auth? - 10/3
+4) Styling - 10/3
+5) More features to music-search (looking for members)
+6) Auth state different when logged in and when not logged in
+
+7) Chat Functionality (stretch goal)

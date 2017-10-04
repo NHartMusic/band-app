@@ -1,2 +1,3 @@
-1) load the bands profile with params/:id - not working
-2) Pass Data between BandProfile and FanMusicSearch
+1) need to add space after filter for it to work
+2) get multiple gigs to show up
+3) re-direct leads other machines to json and not rendered page.
