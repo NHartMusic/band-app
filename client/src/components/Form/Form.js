@@ -18,6 +18,7 @@ class Form extends Component {
     // Binding the event listeners which we will pass as props
   }
 
+  //Handles the form values and updates the database.
   handleFormSubmit = e => {
     e.preventDefault();
     if (this.state.name && this.state.photoURL && this.state.genre && this.state.location && this.state.bio && this.state.soundcloudURL && this.state.facebook && this.state.youtubeURL) {
