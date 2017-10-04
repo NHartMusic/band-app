@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { signIn} from "../../helpers/auth";
+import { signIn, signOut, authStateChange} from "../../helpers/auth";
 
 class Login extends Component{
   constructor(){
@@ -7,8 +7,10 @@ class Login extends Component{
     this.state = {
       hello:"yo peeps"
     }
-    // this.logUserIn = this.logUserIn.bind(this);
-    // this.logUserOut = this.logUserOut.bind(this);
+  }
+
+  componentDidUpdate(){
+    // authStateChange();
   }
 
   logUserIn = (e) => {
@@ -22,10 +24,18 @@ class Login extends Component{
             const email = user.email;
             const photo = user.photoURL;
             const uid = user.uid;
-        console.log(`name: ${name}, email:${email}, photo:${photo},
-          uid:${uid}`);
-        window.location.pathname = "/profile";
-
+          if(name === "theband app"){
+            console.log("welcome admin!");
+            window.location.pathname = "/admin";
+          }else{
+            signOut().then(function() {
+              // Sign-out successful.
+              alert("sorry, you're not an admin");
+            }).catch(function(error) {
+              // An error happened.
+            });
+          }
+        // window.location.pathname = "/signup";
       }).catch(function(error) {
             console.log(error.code);
             console.log(error.message);
