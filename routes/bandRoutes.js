@@ -8,3 +8,4 @@ module.exports = router
   .get("/allBands",bandController.findAll)
   .get("/profile/:id", bandController.findByName)
   .get("/gigs/:id", bandController.findByName)
+  .post("/creatBand", bandController.create)
