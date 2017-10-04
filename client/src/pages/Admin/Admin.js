@@ -21,7 +21,7 @@ class Admin extends Component{
         <h1>Welcome to the admin page</h1>
         <button onClick={this.handleNewBand}>Add new band</button>
         <button>Manage existing bands</button>
-        <Form/>
+        {/*<Form/>*/}
       </div>
 
     )
