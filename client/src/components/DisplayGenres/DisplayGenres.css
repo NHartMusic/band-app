@@ -6,10 +6,22 @@
 .bandImg{
   width:100px;
   height:100px;
+  margin-right: 10px;
 }
 
 .oneBand{
-  border: 1px solid black;
+  border: 3px solid #D64933;
   margin:10px;
   padding:10px;
+  background-color: #7C7C7C;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #888888;
 }
+
+.bandText{
+	font-family: 'Varela Round', sans-serif;
+	color: #0000000;
+}
+
+
+
