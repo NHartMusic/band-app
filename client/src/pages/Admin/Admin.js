@@ -5,7 +5,6 @@ class Admin extends Component{
   constructor(){
     super();
     this.state = {
-
     }
   }
 
@@ -13,7 +12,6 @@ class Admin extends Component{
     e.preventDefault();
     window.location.pathname = "/signup";
   }
-
 
   render(){
     return(
