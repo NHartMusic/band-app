@@ -14,7 +14,7 @@ const BandSeed = [
     photoURL: "http://bit.ly/2hCoGRz",
     genre: "soul",
     location: "berkely",
-    bio: "best christian metal band ever",
+    bio: "The Velvet Touch are a progressive soul pand from Humboldt County, California.",
     newMemberSearch: true,
     gigs:["Greek Theater, 10/17/2017"],
 
@@ -24,9 +24,19 @@ const BandSeed = [
     photoURL: "http://bit.ly/2x5bStV",
     genre: "psych",
     location: "sf",
-    bio: "best christian metal band ever",
+    bio: "Penumbral Rise are a local clown rock band.",
     newMemberSearch: true,
     gigs:["McDonalds, 10/17/2017"]
+
+  },
+  {
+    name: "Battles",
+    photoURL: "http://bit.ly/2xSz0Lg",
+    genre: "experimental",
+    location: "sf",
+    bio: "New York experimental math-rock band Battles are known for combining pop music melodies with elements of experimental electronic music, post-modern serialism and jazz.",
+    newMemberSearch: true,
+    gigs:["Midway SF, 10/1/17"]
 
   },
   {
@@ -34,7 +44,7 @@ const BandSeed = [
     photoURL: "http://bit.ly/2xSz0Lg",
     genre:"garage",
     location:"sf",
-    bio: "best christian metal band ever",
+    bio: "Often featuring lyrics about fantasy/sci-fi elements, Thee Oh Sees (subject to frequent band name changes) are one of today's most prolific psychedelic garage rock bands.",
     newMemberSearch: true,
     gigs:["Great American Music Hall, 9/28/2017"]
 

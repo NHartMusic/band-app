@@ -22,7 +22,7 @@ class DisplayGenres extends Component{
           return(
             <div className="oneBand" key={x._id}>
               <h3>{x.name}</h3>
-              <p>Genre: <em>{x.genre}</em></p>
+              <p className= "bandText">Genre: <em>{x.genre}</em></p>
               <img
               className="bandImg"
               src={x.photoURL}
