@@ -30,7 +30,7 @@ class Form extends Component {
   //Handles the form values and updates the database.
   handleFormSubmit = e => {
     e.preventDefault();
-    if (this.state.name && this.state.photoURL && this.state.genre && this.state.location && this.state.bio && this.state.soundcloudURL && this.state.facebook && this.state.youtubeURL) {
+    if (this.state.name && this.state.photoURL && this.state.genre && this.state.location && this.state.bio && this.state.soundcloudURL && this.state.facebookURL && this.state.youtubeURL) {
       API.saveBand({
         name: this.state.name,
         photoURL: this.state.photoURL,
@@ -38,9 +38,13 @@ class Form extends Component {
         location: this.state.location,
         bio: this.state.bio,
         soundcloudURL: this.state.soundcloudURL,
-        facebookURL: this.state.facebook,
-        youtubeURL: this.state.youtubeURL
+        facebookURL: this.state.facebookURL,
+        youtubeURL: this.state.youtubeURL,
+        newMemberSearch: true,
+        gigs:["The Chapel, 10/10/17"]
       })
+        .then(res =>
+        window.location.pathname = res.data)
         .catch(err => console.log(err));
     }
   };
@@ -106,7 +110,7 @@ class Form extends Component {
             placeholder="youtube url"
           />
           <FormBtn
-                onClick={this.handleFormSubmit}
+            onClick={this.handleFormSubmit}
           >
             Add Band
           </FormBtn>

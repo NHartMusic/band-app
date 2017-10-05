@@ -16,10 +16,22 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    db
-      .create(req.body)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+    // console.log("passed from front end:",req.body);
+
+    let band = new db(req.body);
+
+    band.save(function(err, doc) {
+      // Log any errors
+      if (err) {
+        console.log(err);
+      }
+      // Or log the doc
+      else {
+        console.log("Successfully wrote to db");
+        console.log(doc);
+        res.send("/manage-bands");
+      }
+    });
   },
   updateBand: function(req, res) {
     db

@@ -8,5 +8,5 @@ module.exports = router
   .get("/api/allBands",bandController.findAll)
   .get("/api/profile/:id", bandController.findByName)
   .get("/api/gigs/:id", bandController.findByName)
-  .post("/api/creatBand", bandController.create)
+  .post("/api/createBand", bandController.create)
   .delete("/api/deleteBand/:id", bandController.remove)
