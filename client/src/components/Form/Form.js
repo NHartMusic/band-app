@@ -65,7 +65,7 @@ class Form extends Component {
           <input
             value={this.state.photoURL}
             onChange={this.handleInputChange}
-            name="photo"
+            name="photoURL"
             type="text"
             placeholder="photo url"
           />
@@ -86,21 +86,21 @@ class Form extends Component {
           <input
             value={this.state.soundcloudURL}
             onChange={this.handleInputChange}
-            name="soundcloud"
+            name="soundcloudURL"
             type="text"
             placeholder="soundcloud url"
           />
           <input
             value={this.state.facebookURL}
             onChange={this.handleInputChange}
-            name="facebook"
+            name="facebookURL"
             type="text"
             placeholder="facebook url"
           />
           <input
             value={this.state.youtubeURL}
             onChange={this.handleInputChange}
-            name="youtube"
+            name="youtubeURL"
             type="text"
             placeholder="youtube url"
           />
