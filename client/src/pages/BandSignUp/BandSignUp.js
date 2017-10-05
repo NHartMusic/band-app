@@ -12,7 +12,7 @@ class BandSignUp extends Component{
   render(){
     return(
       <div className = "row">
-        <div class="col-lg-8" id="heading">
+        <div className="col-lg-8" id="heading">
           <h2>Welcome user{/*gmail name will go here*/}</h2>
           <h4>Tell us more about yourself</h4>
           <Form/>
