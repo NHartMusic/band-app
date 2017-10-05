@@ -25,6 +25,5 @@ export default {
   },
   deleteBand: function(band_id){
     return axios.delete("/api/deleteBand/" + band_id)
-
   }
 };

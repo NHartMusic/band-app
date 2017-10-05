@@ -12,7 +12,7 @@ class BandSignUp extends Component{
   render(){
     return(
       <div className = "row">
-        <div class="col-lg-8" id="heading">
+        <div className="col-lg-8" id="heading">
         <a href="/admin">Go back to admin page</a>
           <h2>Add a new band here!</h2>
           <Form/>
