@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Admin.css';
+import Form from "../../components/Form/Form";
 
 class Admin extends Component{
   constructor(){
