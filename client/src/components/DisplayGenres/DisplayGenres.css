@@ -6,7 +6,6 @@
 .bandImg{
   width:100px;
   height:100px;
-  margin-right: 10px;
 }
 
 .oneBand{
@@ -21,6 +20,10 @@
 .bandText{
 	font-family: 'Varela Round', sans-serif;
 	color: #0000000;
+}
+
+button{
+	margin:2px;
 }
 
 

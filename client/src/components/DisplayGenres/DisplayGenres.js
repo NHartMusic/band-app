@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import API from '../../utils/API';
 import './DisplayGenres.css';
+import { Button } from 'react-bootstrap';
 
 class DisplayGenres extends Component{
   constructor(props){
@@ -27,9 +28,9 @@ class DisplayGenres extends Component{
               className="bandImg"
               src={x.photoURL}
               alt="band gathering together"/>
-              <button id={x._id}
+              <Button bsStyle="danger" id={x._id}
                 onClick={this.handleClick}
-              >Go to bands profile</button>
+              >Go to bands profile</Button>
             </div>
 
           )
