@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import API from '../../utils/API';
 // import MyMapComponent from "../MapWithAMarker/MapWithAMarker.js";
-// import "./DisplayGigs.css";
+import "./DisplayGigs.css";
 
 class DisplayGigs extends Component{
   constructor(props){
@@ -13,7 +13,8 @@ class DisplayGigs extends Component{
 
 
   findLocation = () => {
-    API.getMaps("Great American Music Hall")
+    let place = this.props.gigData[0].split(", ")[0];
+    API.getMaps(place)
         .then(res => this.setState({
           completeAddress: res.data.results[0].formatted_address
         })
@@ -28,7 +29,7 @@ class DisplayGigs extends Component{
 
   }
 
-  render(){ 
+  render(){
     let place,date;
     if(!this.props.gigData){
       place = "No data yet bruh";
@@ -36,29 +37,32 @@ class DisplayGigs extends Component{
     }else{
       place = this.props.gigData[0].split(", ")[0];
       date = this.props.gigData[0].split(", ")[1];
-    } 
+    }
     return(
       <div>
         <div className="row">
-           <div className="row">
-       
-                <h3>{place}</h3>
-                <hr/>
-                <h3>{date}</h3>
-                <hr/>
-                <h3>{this.state.completeAddress}</h3>
-              
-              {/*<MyMapComponent
-                isMarkerShown
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-                loadingElement={<div style={{ height: `100%` }} />}
-                containerElement={<div style={{ height: `400px` }} />}
-                mapElement={<div style={{ height: `100%` }} />}
-              />*/}
-
+          <div className="col-md-3">
+            <h2>Venue:</h2>
+            <h3>{place}</h3>
           </div>
- 
+          <div className="col-md-3">
+            <h2>Date:</h2>
+            <h3>{date}</h3>
+          </div>
+          <div  className="col-md-3">
+            <h2>Address:</h2>
+            <h3>{this.state.completeAddress}</h3>
+          </div>
+          <div className="col-md-3">
+            <h2>Time:</h2>
+            <h3>10:00 AM</h3>
+          </div>
         </div>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.0072851403183!2d-118.29858018549074!3d34.12056322157549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c09ef11fba31%3A0x510cf028ee214b1f!2s2700+N+Vermont+Ave%2C+Los+Angeles%2C+CA+90027!5e0!3m2!1sen!2sus!4v1507184014803"
+        id="googleMap"
+        ></iframe>
+
       </div>
     )
   }

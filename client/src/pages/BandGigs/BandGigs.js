@@ -25,7 +25,7 @@ class BandGigs extends Component{
     return(
       <div>
         <Navbar/>
-        <h2>Upcoming Gigs:</h2>
+        <h2>Upcoming Gig:</h2>
         <DisplayGigs
           gigData = {this.state.oneBandsGigs}/>
 
