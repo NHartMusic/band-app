@@ -19,6 +19,13 @@ class Form extends Component {
     // Binding the event listeners which we will pass as props
   }
 
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
   //Handles the form values and updates the database.
   handleFormSubmit = e => {
     e.preventDefault();
@@ -43,48 +50,56 @@ class Form extends Component {
       <div className = "container">
           <input
             value={this.state.name}
+            onChange={this.handleInputChange}
             name="name"
             type="text"
             placeholder="band name"
           />
           <textarea
             value={this.state.bio}
+            onChange={this.handleInputChange}
             name="bio"
             type="text"
             placeholder="band bio"
           />
           <input
             value={this.state.photoURL}
+            onChange={this.handleInputChange}
             name="photo"
             type="text"
             placeholder="photo url"
           />
           <input
             value={this.state.genre}
+            onChange={this.handleInputChange}
             name="genre"
             type="text"
             placeholder="band genre"
           />
           <input
             value={this.state.location}
+            onChange={this.handleInputChange}
             name="location"
             type="text"
             placeholder="location"
           />
           <input
             value={this.state.soundcloudURL}
+            onChange={this.handleInputChange}
             name="soundcloud"
             type="text"
             placeholder="soundcloud url"
           />
           <input
             value={this.state.facebookURL}
+            onChange={this.handleInputChange}
             name="facebook"
             type="text"
             placeholder="facebook url"
           />
           <input
             value={this.state.youtubeURL}
+            onChange={this.handleInputChange}
             name="youtube"
             type="text"
             placeholder="youtube url"
