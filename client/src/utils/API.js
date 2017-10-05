@@ -17,6 +17,6 @@ export default {
     return axios.get("/gigs/" + band_id);
   },
   saveBand: function(bandData) {
-    return axios.post("createBand", bandData);
+    return axios.post("/createBand", bandData);
   }
 };
