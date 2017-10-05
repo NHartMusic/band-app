@@ -14,12 +14,18 @@ class Admin extends Component{
     window.location.pathname = "/signup";
   }
 
+
+  manageBands = (e) => {
+    e.preventDefault();
+    window.location.pathname = "/manage-bands";
+  }
+
   render(){
     return(
       <div>
         <h1>Welcome to the admin page</h1>
         <button onClick={this.handleNewBand}>Add new band</button>
-        <button>Manage existing bands</button>
+        <button onClick={this.manageBands}>Manage existing bands</button>
         {/*<Form/>*/}
       </div>
 

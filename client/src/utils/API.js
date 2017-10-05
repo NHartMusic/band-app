@@ -18,5 +18,8 @@ export default {
   },
   saveBand: function(bandData) {
     return axios.post("/api/createBand", bandData);
+  },
+  deleteBand: function(band_id){
+    return axios.delete("/api/deleteBand/" + band_id)
   }
 };
