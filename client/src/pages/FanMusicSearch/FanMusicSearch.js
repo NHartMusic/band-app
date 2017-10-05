@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/lib/Button';
+// import Button from 'react-bootstrap/lib/Button';
 // // or
-// import { Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import MusicSearchBar from "../../components/MusicSearchBar/MusicSearchBar";
 import DisplayGenres from "../../components/DisplayGenres/DisplayGenres";
 import API from '../../utils/API';
