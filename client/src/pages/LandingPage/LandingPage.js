@@ -18,10 +18,10 @@ class Landing extends Component{
     return(
       <div>
         <h1>Welcome to the band app</h1>
-        <h3>Are you a band or a fan?</h3>
+        <h3>Are you a user or an admin?</h3>
         <div className="row">
         <div className="col-md-6">
-          <button onClick={this.goSearchForMusic}>Continue as a Fan</button>
+          <button onClick={this.goSearchForMusic}>Continue as a User</button>
         </div>
           <Login/>
         </div>
