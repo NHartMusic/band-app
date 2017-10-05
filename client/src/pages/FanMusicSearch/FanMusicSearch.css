@@ -1,3 +1,13 @@
 .musicSearch{
-  text-align: center;
+	text-align: center;
+	align-content: center;
+	/*margin-left: 10%;*/
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.genres{
+  	text-align: center;
+  	align-content: center;
+  	background-color: blue;
 }

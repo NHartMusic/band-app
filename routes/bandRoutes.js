@@ -5,7 +5,8 @@ const bandController = require("../controllers/bandController.js");
 
 //routes go here
 module.exports = router
-  .get("/allBands",bandController.findAll)
-  .get("/profile/:id", bandController.findByName)
-  .get("/gigs/:id", bandController.findByName)
-  .post("/creatBand", bandController.create)
+  .get("/api/allBands",bandController.findAll)
+  .get("/api/profile/:id", bandController.findByName)
+  .get("/api/gigs/:id", bandController.findByName)
+  .post("/api/creatBand", bandController.create)
+  .delete("/api/deleteBand/:id", bandController.remove)

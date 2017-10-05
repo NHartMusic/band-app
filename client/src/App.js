@@ -6,29 +6,22 @@ import BandProfile from "./pages/BandProfile/BandProfile";
 import BandGigs from "./pages/BandGigs/BandGigs";
 import FanMusicSearch from "./pages/FanMusicSearch/FanMusicSearch";
 import Admin from "./pages/Admin/Admin";
+import ManageBands from "./pages/ManageBands/ManageBands";
 
 import './App.css';
 
 class App extends Component {
-  constructor() {
-    super();
-    // Setting initial state to store the input values
-    this.state = {
-
-    };
-    // Binding the event listeners which we will pass as props
-  }
-
   render() {
     return (
       <Router>
         <div className="container">
-          <Route exact path = "/" component={Landing}/>
-          <Route path = "/signup" component={BandSignUp}/>
-          <Route path = "/profile/:id" component={BandProfile}/>
-          <Route path = "/gigs/:id" component={BandGigs}/>
-          <Route path = "/music-options" component={FanMusicSearch}/>
-          <Route path = "/admin" component={Admin}/>
+          <Route exact path="/" component={Landing}/>
+          <Route path="/signup" component={BandSignUp}/>
+          <Route path="/profile/:id" component={BandProfile}/>
+          <Route path="/gigs/:id" component={BandGigs}/>
+          <Route path="/music-options" component={FanMusicSearch}/>
+          <Route path="/admin" component={Admin}/>
+          <Route path="/manage-bands" component={ManageBands}/>
           {/*<Route path = "/searched-bands" component={FanMusicResults}/>*/}
         </div>
       </Router>

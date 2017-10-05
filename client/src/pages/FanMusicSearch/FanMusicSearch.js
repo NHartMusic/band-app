@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+// import Button from 'react-bootstrap/lib/Button';
+// // or
+import { Button } from 'react-bootstrap';
 import MusicSearchBar from "../../components/MusicSearchBar/MusicSearchBar";
 import DisplayGenres from "../../components/DisplayGenres/DisplayGenres";
 import API from '../../utils/API';
@@ -42,7 +45,9 @@ class FanMusicSearch extends Component{
   render(){
     return(
       <div className="musicSearch">
-        <h2>Well hello there</h2>
+
+        <h2>Well hello there!</h2>
+
         <h4>What kind of music are you looking for?</h4>
         <MusicSearchBar
         bandStuff = {this.state.filteredBands}

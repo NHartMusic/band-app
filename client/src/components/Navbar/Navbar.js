@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import {signOut} from "../../helpers/auth";
 
 class Navbar extends Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
-
+      bandId:this.props.bandId
     }
   }
 
@@ -24,10 +24,9 @@ class Navbar extends Component{
   render(){
     return(
       <div>
-        <a href="/profile">Home</a>
+        <a href="/music-options">Search for other bands</a>
+        <a href={"/profile/" + this.props.bandId}>Band Profile</a>
         <a href={"/gigs/" + this.props.bandId}>Gigs</a>
-        <a href="/">Chat</a>
-        <a onClick={this.logUserOut} href="/">Logout</a>
       </div>
     )
   }
