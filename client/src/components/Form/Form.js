@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../utils/API';
+import FormBtn from "./FormBtn";
 import './Form.css';
 
 class Form extends Component {
@@ -104,6 +105,11 @@ class Form extends Component {
             type="text"
             placeholder="youtube url"
           />
+          <FormBtn
+                onClick={this.handleFormSubmit}
+          >
+            Add Band
+          </FormBtn>
         </div>
       </panel>
     );
