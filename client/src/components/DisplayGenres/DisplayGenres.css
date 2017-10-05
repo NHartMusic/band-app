@@ -13,3 +13,7 @@
   margin:10px;
   padding:10px;
 }
+
+.delete_buttons{
+  float:right;
+}
