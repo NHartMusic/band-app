@@ -7,17 +7,17 @@ const Schema = mongoose.Schema;
 const BandSchema = new Schema({
     name: {
         type: String,
-        required: true,
-        validate: {
-            validator: function(v, cb) {
-                User.find({
-                    name: v
-                }, function(err, docs) {
-                    cb(docs.length == 0);
-                });
-            },
-            message: 'User already exists!'
-        }
+        required: true
+        // validate: {
+        //     validator: function(v, cb) {
+        //         User.find({
+        //             name: v
+        //         }, function(err, docs) {
+        //             cb(docs.length == 0);
+        //         });
+        //     },
+        //     message: 'User already exists!'
+        // }
     },
     photoURL: {
         type: String,

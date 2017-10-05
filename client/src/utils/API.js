@@ -17,6 +17,7 @@ export default {
     return axios.get("/api/gigs/" + band_id);
   },
   saveBand: function(bandData) {
+    // console.log("bandData:", bandData);
     return axios.post("/api/createBand", bandData);
   },
 
