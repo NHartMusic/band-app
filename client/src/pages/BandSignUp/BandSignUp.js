@@ -13,8 +13,8 @@ class BandSignUp extends Component{
     return(
       <div className = "row">
         <div class="col-lg-8" id="heading">
-          <h2>Welcome user{/*gmail name will go here*/}</h2>
-          <h4>Tell us more about yourself</h4>
+        <a href="/admin">Go back to admin page</a>
+          <h2>Add a new band here!</h2>
           <Form/>
         </div>
       </div>

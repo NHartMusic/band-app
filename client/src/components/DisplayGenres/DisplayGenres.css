@@ -6,7 +6,6 @@
 .bandImg{
   width:100px;
   height:100px;
-  margin-right: 10px;
 }
 
 .oneBand{
@@ -18,10 +17,16 @@
   box-shadow: 5px 5px 5px #888888;
 }
 
+.delete_buttons{
+  float:right;
+}
+
 .bandText{
 	font-family: 'Varela Round', sans-serif;
 	color: #0000000;
 }
 
-
+button{
+	margin:2px;
+}
 

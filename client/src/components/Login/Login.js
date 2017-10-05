@@ -50,7 +50,7 @@ class Login extends Component{
   render(){
     return(
       <div className="col-md-6">
-        <button onClick={this.logUserIn}>Login as a Band</button>
+        <button onClick={this.logUserIn}>Login as Admin</button>
       </div>
     )
   }

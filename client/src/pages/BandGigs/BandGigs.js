@@ -15,7 +15,7 @@ class BandGigs extends Component{
     //need to retrieve bands id and append below
     let bandId = this.props.match.params.id;
     API.getOneBandsGigs(bandId)
-    .then(res => 
+    .then(res =>
     this.setState({
       oneBandsGigs: res.data.gigs
     }))
@@ -25,7 +25,6 @@ class BandGigs extends Component{
     return(
       <div>
         <Navbar/>
-        <button>Post Gig</button>
         <h2>Upcoming Gigs:</h2>
         <DisplayGigs
           gigData = {this.state.oneBandsGigs}/>
