@@ -19,7 +19,12 @@ export default {
   saveBand: function(bandData) {
     return axios.post("/api/createBand", bandData);
   },
+
+  getMaps: function(address) {
+    return axios.get("https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&key=AIzaSyDV8IZzYj1fUWFJ3phjYvV1Q0aQfoCn49c");
+  },
   deleteBand: function(band_id){
     return axios.delete("/api/deleteBand/" + band_id)
+
   }
 };
