@@ -20,7 +20,7 @@ class Landing extends Component{
       <div id="intro_page">
         <h1>GigHub</h1>
         <p className="intro_text">A social media platform for bands</p>
-        <img src="https://www.spreadshirt.com/image-server/v1/mp/designs/11906017,width=178,height=178/music-icon-white-version.png"
+        <img src={require("../../gigHubLogo.png")}
              alt="music icon"
              id="music_icon"/>
         <div className="row">
