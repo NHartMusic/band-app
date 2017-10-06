@@ -59,6 +59,7 @@ class DisplayGigs extends Component{
           </div>
         </div>
         <iframe
+        title="google-map-temporary"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.0072851403183!2d-118.29858018549074!3d34.12056322157549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c09ef11fba31%3A0x510cf028ee214b1f!2s2700+N+Vermont+Ave%2C+Los+Angeles%2C+CA+90027!5e0!3m2!1sen!2sus!4v1507184014803"
         id="googleMap"
         ></iframe>

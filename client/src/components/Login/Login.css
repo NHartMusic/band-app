@@ -1,0 +1,12 @@
+#admin_button{
+  background-color: #00449E;
+  padding:10px;
+  color:white;
+  border-radius: 10px;
+  border:none;
+}
+
+#admin_button:hover{
+  border:2px solid #00449E;
+  background-color:#0a0a0a;
+}

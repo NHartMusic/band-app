@@ -1,0 +1,41 @@
+#admin_section{
+  margin-top: 50px;
+}
+
+#add_band_button, #manage_band_button{
+  margin: 10px;
+  padding:10px;
+  border-radius: 10px;
+  border: none;
+  color:white;
+}
+#add_band_button:hover, #manage_band_button:hover{
+  background-color:#0a0a0a;
+}
+
+#add_band_button:hover{
+    border: 2px solid orange;
+}
+#manage_band_button:hover{
+    border: 2px solid red;
+}
+
+#manage_band_button{
+  background-color:red;
+}
+
+#add_band_button{
+  background-color: orange;
+}
+#admin_nav{
+  font-size: 20px;
+  text-align: right;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#admin_landing{
+  margin-top:100px;
+}
