@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { signIn, signOut, authStateChange} from "../../helpers/auth";
+import { signIn, signOut} from "../../helpers/auth";
+import "./Login.css";
 
 class Login extends Component{
   constructor(){
@@ -21,9 +22,9 @@ class Login extends Component{
         console.log("you've signed in!")
         const user = result.user;
             const name = user.displayName;
-            const email = user.email;
-            const photo = user.photoURL;
-            const uid = user.uid;
+            // const email = user.email;
+            // const photo = user.photoURL;
+            // const uid = user.uid;
           if(name === "theband app"){
             console.log("welcome admin!");
             window.location.pathname = "/admin";
@@ -50,7 +51,9 @@ class Login extends Component{
   render(){
     return(
       <div className="col-md-6">
-        <button onClick={this.logUserIn}>Login as Admin</button>
+        <button
+        id="admin_button"
+        onClick={this.logUserIn}>Login as Admin</button>
       </div>
     )
   }

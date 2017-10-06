@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import "./BandDeets.css";
 
 class BandDeets extends Component{
-  constructor(props){
-    super(props);
-  }
-
-  componentDidUpdate(){
-  }
-
   render(){
     return(
       <div className="row">

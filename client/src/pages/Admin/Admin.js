@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {signOut} from "../../helpers/auth";
 import './Admin.css';
-import Form from "../../components/Form/Form";
+// import Form from "../../components/Form/Form";
 
 class Admin extends Component{
   constructor(){
@@ -34,11 +34,19 @@ class Admin extends Component{
 
   render(){
     return(
-      <div>
-        <a onClick={this.logUserOut} href="/">Logout</a>
-        <h1>Welcome to the admin page</h1>
-        <button onClick={this.handleNewBand}>Add new band</button>
-        <button onClick={this.manageBands}>Manage existing bands</button>
+      <div id="admin_section">
+      <div id="admin_nav">
+        <a onClick={this.logUserOut}
+            href="/">Logout</a>
+      </div>
+      <div id="admin_landing">
+        <h2>Welcome admin!</h2>
+        <h4 className="intro_text">You can add or delete your bands on this page</h4>
+        <button id="add_band_button"
+        onClick={this.handleNewBand}>Add new band</button>
+        <button id="manage_band_button"
+        onClick={this.manageBands}>Manage existing bands</button>
+      </div>
         {/*<Form/>*/}
       </div>
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Login from "../../components/Login/Login";
+import "./LandingPage.css";
 
 class Landing extends Component{
   constructor(){
@@ -16,12 +17,16 @@ class Landing extends Component{
 
   render(){
     return(
-      <div>
-        <h1>Welcome to the band app</h1>
-        <h3>Are you a user or an admin?</h3>
+      <div id="intro_page">
+        <h1>GigHub</h1>
+        <p className="intro_text">A social media platform for bands</p>
+        <img src="https://www.spreadshirt.com/image-server/v1/mp/designs/11906017,width=178,height=178/music-icon-white-version.png"
+             alt="music icon"
+             id="music_icon"/>
         <div className="row">
         <div className="col-md-6">
-          <button onClick={this.goSearchForMusic}>Continue as a User</button>
+          <button id="user_button"
+          onClick={this.goSearchForMusic}>Continue as a User</button>
         </div>
           <Login/>
         </div>
