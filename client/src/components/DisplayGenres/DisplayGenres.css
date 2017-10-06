@@ -6,27 +6,42 @@
 .bandImg{
   width:100px;
   height:100px;
+  align-content: center;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom:6px;
 }
 
 .oneBand{
-  border: 3px solid #D64933;
+  border: 3px solid #E27C00;
   margin:10px;
   padding:10px;
-  background-color: #7C7C7C;
+  background-color: #004196;
   border-radius: 25px;
-  box-shadow: 5px 5px 5px #888888;
 }
 
-.delete_buttons{
-  float:right;
+.bandButton{
+  border-radius: 10px;
+  padding:5px;
+  border: none;
+  color:white;
+  background-color: #E27C00;
 }
+
+
 
 .bandText{
 	font-family: 'Varela Round', sans-serif;
-	color: #0000000;
+	color: #FFFCFD;
 }
 
+.bandText{
+  font-family: 'Varela Round', sans-serif;
+  color: #FFFCFD;
+}
+
+
 button{
-	margin:2px;
+	margin-auto: 5px;
 }
 
