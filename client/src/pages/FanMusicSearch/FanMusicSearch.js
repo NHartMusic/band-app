@@ -19,7 +19,7 @@ class FanMusicSearch extends Component{
   getDataFromChild = (dataFromChild) =>{
     //we will use data from child here
     if(!dataFromChild.length){
-      console.log("artist's dont exist");
+      console.log("artists dont exist");
       this.setState({
         filteredBands: this.state.allBands
       })
@@ -46,9 +46,9 @@ class FanMusicSearch extends Component{
     return(
       <div className="musicSearch">
 
-        <h2>Well hello there!</h2>
+        <h2 className="title">Well hello there!</h2>
 
-        <h4>What kind of music are you looking for?</h4>
+        <h4 className="subtitle">What kind of music are you looking for?</h4>
         <MusicSearchBar
         bandStuff = {this.state.filteredBands}
         callBackFromParent = {this.getDataFromChild}/>

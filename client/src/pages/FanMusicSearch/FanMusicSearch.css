@@ -6,6 +6,16 @@
 	margin-right:auto;
 }
 
+.title{
+	font-family: 'Monda';
+	color: #FFFCFD;
+}
+
+.subtitle{
+	font-family: 'Monda';
+	color: #FFFCFD;
+}
+
 .genres{
   	text-align: center;
   	align-content: center;
